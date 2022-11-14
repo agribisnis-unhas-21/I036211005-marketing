@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1 style="color:rgb(17, 0, 255)"> Welcome Back To Me Again and Again</h1>
+    <h3 style="color:rgb(0, 145, 145)">Saya akan pengenalkan variabel di apk JavaScript</h3>
+ 
+    <script>
+        // cara satu
+        // var x = 3;
+        // var y = "Hello Cantik...";
+        // document.write('<br>')
+        // document.write('ini nilai x:',x, '<br>');
+        // document.write('pesan      : ',y);
+
+        // cara dua
+        // let a = 3;
+        // let b = 2;
+        // let c = a + b;
+        // document.write('<br>')
+        // document.write(a,' + ',b,' = ',c);
+        // document.write('<br>')
+        // document.write('<br>')
+
+        //cara tiga
+        document.write('<br>')
+        document.write('Hallo Gaes Perkenalkan Nama Saya')
+        const nama = "Muhammad Ikhram Al-Insaan";
+        const umur = 19;
+        document.write('<br>','Nama :',nama);
+        document.write('<br>','Umur :',umur);
+        document.write('<br>')
+        document.write('<br>')
+
+    
+    </script>
+
+    <h2 style="color:rgb(0, 145, 145)">Pengenalan Logika JavaScript</h2>
+
+    <script>
+
+
+        //ini function atau fungsi pada JavaScript
+        function Masuk(id_user, id_pass) {
+            // document.write ('BERHASIL LOGIN');
+            // document.write('<br>');
+            // document.write('<br>');
+
+        input_user = document.getElementById(id_user).value;
+        input_Pass = document.getElementById(id_pass).value;
+
+        var username = "mhmdikhram_";
+        var Password = "ikhram17";
+
+        if (input_user === username) {
+            // window.alert('USERNAME KAMU BENAR!!');
+            
+            document.write('<br>');
+
+            if (input_Pass === Password) {
+                window.alert('PASSWORD KAMU BENAR!!');
+                // document.write('<br>');
+                document.write('~Login Sukses Bro~');
+                // document.getElementById(id_user).innerHTML = ""
+                // document.getElementById(id_pass).innerHTML = ""
+                document.write('<br>');
+                document.write('<br>');
+
+            } else {
+                window,alert('PASSWORD KAMU SALAH!!');
+                document.write('<br>');
+                document.write('~Login Gagal Bro~');
+
+            }
+        } else {
+            window.alert('USERNAME KAMU SALAH!! TOLONG MASUKKAN USERNAME YANG BENAR!!');
+
+        }
+        }
+
+    </script>
+
+    <form action="Login">
+        <label for="Username"> Username : </label>
+        <input type="text" id="Username">
+        <br>
+        <br>
+        <label for="Password"> Password : </label>
+        <input type="password" id="Password">
+        <br>
+        <br>
+
+        <a href="JavaScript_V-1.html">
+            <button type="button" onclick="Masuk('Username','Password')">Masuk</button>
+        </a>
+        <br>
+        <br>
+        <button type="button" onclick="masuk">Lupa Password</button>
+    </form>
+</body>
+</html>
